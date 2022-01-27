@@ -15,7 +15,13 @@ import { LanguageComponent } from './language/language.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatListModule} from "@angular/material/list";
 import {MatMenuModule} from "@angular/material/menu";
-import {TranslateModule} from "@ngx-translate/core";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+
+function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -33,10 +39,18 @@ import {TranslateModule} from "@ngx-translate/core";
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    HttpClientModule,
     RouterModule,
     MatListModule,
     MatMenuModule,
-    TranslateModule
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <button mat-icon-button
           (click)="drawer.toggleDrawer();">
     <mat-icon>menu</mat-icon>
@@ -9,10 +9,11 @@
 
   <span class="example-spacer"></span>
 
+  <a class="contactLink" [routerLink]="['/contact']">
+    <span>{{ 'header.contact' | translate}}</span>
+    <mat-icon>contact_support</mat-icon>
+  </a>
+
   <languageBtn></languageBtn>
 
-  <a [routerLink]="['/contact']">
-    <span class="full-height">{{ 'header.contact' | translate }}</span>
-    <mat-icon mat-list-icon>contact_support</mat-icon>
-  </a>
 </mat-toolbar>

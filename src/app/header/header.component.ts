@@ -2,9 +2,9 @@ import {Component, Input, OnInit} from '@angular/core';
 import {DrawerComponent} from "../drawer/drawer.component";
 
 @Component({
-  selector: 'header',
+  selector: 'headerBar',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
   @Input() drawer!: DrawerComponent;
