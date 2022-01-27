@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <button mat-icon-button
+          (click)="drawer.toggleDrawer();">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a [routerLink]="['/']">
+    <img id="logo" src="assets/logo.png" alt="Grand Est logo">
+  </a>
+
+  <span class="example-spacer"></span>
+
+  <languageBtn></languageBtn>
+
+  <a [routerLink]="['/contact']">
+    <span class="full-height">{{ 'header.contact' | translate }}</span>
+    <mat-icon mat-list-icon>contact_support</mat-icon>
+  </a>
+</mat-toolbar>
