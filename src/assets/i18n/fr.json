@@ -4,5 +4,9 @@
   "langue.anglais": "Anglais",
   "langue.langue": "Langue",
 
-  "header.contact": "Contact"
+  "header.contact": "Contact",
+
+  "drawer.accueil": "Accueil",
+  "drawer.visites": "Startseite",
+  "drawer.avis": "Startseite"
 }

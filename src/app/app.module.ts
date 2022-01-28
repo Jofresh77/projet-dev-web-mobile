@@ -18,6 +18,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -50,7 +51,8 @@ function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
