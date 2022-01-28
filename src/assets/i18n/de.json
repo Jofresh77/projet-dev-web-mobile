@@ -4,9 +4,21 @@
   "langue.anglais": "English",
   "langue.langue": "Sprache",
 
-  "header.contact": "Contact",
+  "accueil.title": "Willkommen zu",
+  "accueil.desc": "Diese Seite bietet Ihnen die Möglichkeit, zwei Reisegebiete in der Region Grand Est zu entdecken!",
+  "accueil.metz.title": "Entdecken Sie Metz",
+  "accueil.metz.desc": "Metz, die Hauptstadt Lothringens, bietet Ihnen den Charme seiner Gebäude wie des Bahnhofs oder der Kathedrale!",
+  "accueil.stras.title": "Entdecken Sie Strasbourg",
+  "accueil.stras.desc": "Hauptstadt des Elsass und des europäischen Korridors, erleben Sie das elsässische Abenteuer in dieser Stadt der Tradition!",
+  "accueil.ge.title": "Tourismus im Grand Est",
+  "accueil.ge.desc": "Eine einzigartige Region, lassen Sie sich von Ihrer Neugier verführen und besuchen Sie uns morgen!",
 
-  "drawer.accueil": "Startseite",
-  "drawer.visites": "Startseite",
-  "drawer.avis": "Startseite"
+  "drawer.accueil": "Start Seite",
+  "drawer.lorraine": "Lothringen",
+  "drawer.alsace": "Elsaß",
+  "drawer.contact": "Contact",
+
+  "stats.title": "Rate der Ortsbesuche",
+
+  "contact.desc": "Hallo, ich bin Eliot! Ich bin im dritten Jahr meiner Informatik-Lizenz und habe diese Website über touristische Entdeckungen in der Region Grand Est entworfen! Ich hoffe, dass sie euch gefällt!"
 }

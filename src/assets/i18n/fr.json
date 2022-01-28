@@ -4,9 +4,21 @@
   "langue.anglais": "Anglais",
   "langue.langue": "Langue",
 
-  "header.contact": "Contact",
+  "accueil.title": "Bienvenue sur",
+  "accueil.desc": "Ce site vous propose de découvrir deux zones de voyage dans la région du Grand Est !",
+  "accueil.metz.title": "Découvrez Metz",
+  "accueil.metz.desc": "Capitale de la Lorraine, Metz vous offre le charme de ses batiments comme sa gare ou encore sa cathédrale !",
+  "accueil.stras.title": "Découvrez Strasbourg",
+  "accueil.stras.desc": "Capitale de l'Alsace et du couloir européen, vivez l'aventure alsacienne dans cette ville de tradition !",
+  "accueil.ge.title": "Tourisme dans le Grand Est",
+  "accueil.ge.desc": "Une région unique en son genre, laissez vous tentez par votre curiosité et visitez nous dès demain !",
 
   "drawer.accueil": "Accueil",
-  "drawer.visites": "Startseite",
-  "drawer.avis": "Startseite"
+  "drawer.lorraine": "Lorraine",
+  "drawer.alsace": "Alsace",
+  "drawer.contact": "Contact",
+
+  "stats.title": "Taux de visites des lieux",
+
+  "contact.desc": "Hello moi c'est Eliot ! Je suis en 3ème année de licence informatique et j'ai conçue ce site de découvertes touristiques dans la région Grand Est ! J'espère que vous l'apprécierez !"
 }

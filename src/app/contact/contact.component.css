@@ -1,0 +1,9 @@
+.example-card {
+  margin: 100px;
+  max-width: 400px;
+}
+
+.eliot-header-image {
+  background-image: url("../../assets/img/contact/avatar-eliot.jpg");
+  background-size: cover;
+}

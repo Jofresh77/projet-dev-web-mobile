@@ -5,14 +5,22 @@
         <span class="full-width">{{ 'drawer.accueil' | translate }}</span>
         <mat-icon mat-list-icon>home</mat-icon>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/visites']">
-        <span class="full-width">{{ 'drawer.visites' | translate }}</span>
-        <mat-icon mat-list-icon>home</mat-icon>
+      <mat-list-item [routerLink]="['/lorraine']">
+        <span class="full-width">{{ 'drawer.lorraine' | translate }}</span>
+        <mat-icon mat-list-icon>location_on</mat-icon>
       </mat-list-item>
-      <mat-list-item [routerLink]="['/avis']">
-        <span class="full-width">{{ 'drawer.avis' | translate }}</span>
-        <mat-icon mat-list-icon>home</mat-icon>
+      <mat-list-item [routerLink]="['/alsace']">
+        <span class="full-width">{{ 'drawer.alsace' | translate }}</span>
+        <mat-icon mat-list-icon>location_on</mat-icon>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/contact']">
+        <span class="full-width">{{ 'drawer.contact' | translate }}</span>
+        <mat-icon mat-list-icon>contact_support</mat-icon>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>
+
+  <mat-drawer-content class="sidenav_container">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
 </mat-drawer-container>

@@ -19,6 +19,17 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { LorraineComponent } from './lorraine/lorraine.component';
+import { AlsaceComponent } from './alsace/alsace.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import {MatTabsModule} from "@angular/material/tabs";
+import { LieuxComponentLorraine } from './lorraine/lieux/lieux.component';
+import { StatsComponentLorraine } from './lorraine/stats/stats.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+import {LieuxComponentAlsace} from "./alsace/lieux/lieux.component";
+import {StatsComponentAlsace} from "./alsace/stats/stats.component";
 
 function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -31,29 +42,42 @@ function HttpLoaderFactory(http: HttpClient) {
     DrawerComponent,
     AccueilComponent,
     LanguageComponent,
-    ContactComponent
+    ContactComponent,
+    LorraineComponent,
+    AlsaceComponent,
+    LieuxComponentLorraine,
+    StatsComponentLorraine,
+    LieuxComponentAlsace,
+    StatsComponentAlsace
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    HttpClientModule,
-    RouterModule,
-    MatListModule,
-    MatMenuModule,
-    TranslateModule.forRoot({
-      defaultLanguage: 'en',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    MatSidenavModule
-  ],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        HttpClientModule,
+        RouterModule,
+        MatListModule,
+        MatMenuModule,
+        TranslateModule.forRoot({
+            defaultLanguage: 'en',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        MatSidenavModule,
+        MatCardModule,
+        MatGridListModule,
+        MdbCarouselModule,
+        MatTabsModule,
+        NgxEchartsModule.forRoot({
+        echarts: () => import('echarts')
+        })
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

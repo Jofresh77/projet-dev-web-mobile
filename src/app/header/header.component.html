@@ -1,20 +1,13 @@
 <mat-toolbar color="primary">
   <button mat-icon-button
-          (click)="drawer.toggleDrawer();">
+          (click)="drawer.onToggle();">
     <mat-icon>menu</mat-icon>
   </button>
   <a [routerLink]="['/']">
-    <img id="logo" src="assets/logo.png" alt="Grand Est logo">
+    <img id="logo" src="../../assets/img/logo.png" alt="Grand Est logo">
   </a>
 
   <span class="example-spacer"></span>
 
-  <a class="contactLink"
-     [routerLink]="['/contact']">
-    <span>{{ 'header.contact' | translate}}</span>
-    <mat-icon>contact_support</mat-icon>
-  </a>
-
   <languageBtn></languageBtn>
-
 </mat-toolbar>

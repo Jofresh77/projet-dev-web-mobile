@@ -4,9 +4,21 @@
   "langue.anglais": "English",
   "langue.langue": "Language",
 
-  "header.contact": "Contact",
+  "accueil.title": "Welcome to",
+  "accueil.desc": "This site offers you to discover two travel areas in the Grand Est region!",
+  "accueil.metz.title": "Discover Metz",
+  "accueil.metz.desc": "Capital of Lorraine, Metz offers you the charm of its buildings like its station or its cathedral!",
+  "accueil.stras.title": "Discover Strasbourg",
+  "accueil.stras.desc": "Capital of Alsace and of the European corridor, live the Alsatian adventure in this city of tradition!",
+  "accueil.ge.title": "Tourism in the Grand Est",
+  "accueil.ge.desc": "A unique region, let your curiosity tempt you and visit us tomorrow!",
 
   "drawer.accueil": "Home",
-  "drawer.visites": "Startseite",
-  "drawer.avis": "Startseite"
+  "drawer.lorraine": "Lorraine",
+  "drawer.alsace": "Alsace",
+  "drawer.contact": "Contact",
+
+  "stats.title": "Rate of site visits",
+
+  "contact.desc": "Hello, I'm Eliot! I'm in my 3rd year of a computer science degree and I designed this website about tourist discoveries in the Grand Est region! I hope you will enjoy it!"
 }

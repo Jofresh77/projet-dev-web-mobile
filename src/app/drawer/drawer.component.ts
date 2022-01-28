@@ -14,8 +14,7 @@ export class DrawerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public toggleDrawer(): void  {
+  onToggle(): void {
     this.drawer.toggle();
   }
-
 }
